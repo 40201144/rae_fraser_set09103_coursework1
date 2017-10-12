@@ -1,9 +1,14 @@
-from flask import Flask, url_for, abort
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+def root():
     return "Hello friends"
+
+@app.route('/hello/<name>')
+def hello(name=None):
+    user = {'name': name}
+    return render_template('hello.html', user=user)
 
 @app.route('/heroes')
 def heroes():
