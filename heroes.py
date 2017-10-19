@@ -15,15 +15,15 @@ def tanktest():
 
 @app.route('/types/support/')
 def suptest():
-    return ('Support here')
+    return render_template("supports.html")
 
 @app.route('/types/offensive/')
 def offtest():
-    return ('Offensive here')
+    return render_template("offensive.html")
 
 @app.route('/types/defensive/')
 def deftest():
-    return ('Defensive here')
+    return render_template("defensive.html")
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
