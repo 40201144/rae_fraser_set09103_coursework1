@@ -1,26 +1,63 @@
 <html>
     <h1>OFFENSIVES  WILL BE HERE </h1>
 
-<table>
-
+<table border = 1, style="width:100%">
   <tr>
-    <th>Name</th>
-    <th>Preferred Range</th>
-    <th>Movement</th>
-    <th>Portrait</th>
+    <th width = 10%>Name</th>
+    <th width = 10%>Preferred Range</th>
+    <th width = 10%>Movement</th>
+    <th>Picture</th>
   </tr>
-
   <tr>
-  <td>Reaper</td>
-  <td>Close</td>
-  <td>Clunky</td>
-  <td> <img src="{{url_for('static', filename=reaper.jpg)}}"> </td>
+    <td>Reaper</td>
+    <td>Close</td>
+    <td>Clunky</td>
+    <td> <img src = "{{url_for('static', filename='reaper.jpg')}}"width=50%></td>
   </tr>
-
-
+  <tr>
+    <td>Tracer</td>
+    <td>Close</td>
+    <td>Dynamic</td>
+    <td><img src = "{{url_for('static', filename='tracer.jpg')}}"width=50%></td>
+  </tr>
+  <tr>
+    <td>Doomfist</td>
+    <td>Close-Mid</td>
+    <td>Dynamic</td>
+    <td> <img src = "{{url_for('static', filename='doomfist.jpg')}}"width=50%></td>
+  </tr>
+  <tr>
+    <td>Genji</td>
+    <td>Close</td>
+    <td>Dynamic</td>
+    <td> <img src = "{{url_for('static', filename='genji.jpg')}}"width=50%></td>
+  </tr>
+   <tr>
+    <td>McCree</td>
+    <td>Close-Mid</td>
+    <td>Clunky</td>
+    <td> <img src = "{{url_for('static', filename='mccree.jpg')}}"width=50%></td>
+  </tr>
+  <tr>
+    <td>Pharah</td>
+    <td>Mid-Long</td>
+    <td>Dynamic</td>
+    <td> <img src = "{{url_for('static', filename='pharah.jpg')}}"width=50%></td>
+  </tr>
+  <tr>
+    <td>Sombra</td>
+    <td>Close</td>
+    <td>Clunky</td>
+    <td> <img src = "{{url_for('static', filename='sombra.jpg')}}"width=50%></td>
+  </tr>
+  <tr>
+    <td>Soldier: 76</td>
+    <td>Mid</td>
+    <td>Dynamic</td>
+    <td> <img src = "{{url_for('static', filename='soldier.jpg')}}"width=50%></td>
+  </tr>
 
 </table>
 
-    <a href= "http://localhost:5000/types">Back to types</a>
-
+<a href= "http://localhost:5000/types">Back to types</a>
 </html>
