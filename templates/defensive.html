@@ -1,18 +1,26 @@
 <html>
-    <h1> Defensive Heroes </h1>
-<table border=1, style="width:70%">
+<!--Links to style sheet-->
+<head><link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"></head>
 
+<!--Heading-->
+<h1> Defensive Heroes </h1>
+
+<!--Creates table-->
+<table border=1, style="width:75%">
+
+  <!--Table headings-->
   <tr>
     <th>Name</th>
     <th>Preferred Range</th>
     <th>Movement</th>
     <th>Picture</th>
     </tr>
+  <!--Table contents-->
   <tr>
     <td>Bastion</td>
     <td>Close-Mid-long</td>
     <td>Clunky</td>
-    <td> <img src = "{{url_for('static', filename='bastion.jpg')}}"width=80%></td>
+    <td> <img src = "{{url_for('static', filename='bastion.jpg')}}"width=50%></td>
   </tr>
   <tr>
     <td>Hanzo</td>
@@ -46,6 +54,7 @@
   </tr>
 </table>
 
+<!--Links back to the home page-->
 <a href= "http://localhost:5000/types">Back to types</a>
 
 <html>

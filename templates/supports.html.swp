@@ -1,21 +1,12 @@
 <html>
-<!--Links to style sheet-->
-<head><link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"></head>
-
-<!--Heading-->
-<h1>Always protect your supports</h1>
-
-<!--Creates table-->
-<table style="width:75%", border = 1>
-  <!--Table headings-->
+    <h1>Support Heroes</h1>
+<table style="width:100%", border = 1>
   <tr>
     <th>Name</th>
     <th>Preferred Range</th>
     <th>Movement</th>
     <th>Picture</th>
   </tr>
-
-  <!--Table contents-->
   <tr>
     <td>Ana</td>
     <td>Mid-Long</td>
@@ -46,8 +37,7 @@
     <td>N/A</td>
     <td> <img src = "{{url_for('static', filename='zenyatta.jpg')}}"width=50%></td>
   </tr>
-</table>
 
-<!--Links back to home-->
-<a href= "http://localhost:5000/types">Back to types</a>
+</table>
+    <a href= "http://localhost:5000/types">Back to types</a>
 </html>

@@ -1,13 +1,21 @@
 <html>
-    <h1>OFFENSIVES  WILL BE HERE </h1>
+<!--Links to style sheet-->
+<head><link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"></head>
 
-<table border = 1, style="width:100%">
+<!--Heading-->
+<h1>These guys are so offensive </h1>
+
+<!--Creates table-->
+<table border = 1, style="width:75%">
+  <!--Table headings-->
   <tr>
-    <th width = 10%>Name</th>
-    <th width = 10%>Preferred Range</th>
-    <th width = 10%>Movement</th>
+    <th>Name</th>
+    <th>Preferred Range</th>
+    <th%>Movement</th>
     <th>Picture</th>
   </tr>
+
+  <!--Table contents-->
   <tr>
     <td>Reaper</td>
     <td>Close</td>
@@ -56,8 +64,8 @@
     <td>Dynamic</td>
     <td> <img src = "{{url_for('static', filename='soldier.jpg')}}"width=50%></td>
   </tr>
-
 </table>
 
+<!--Links back to home-->
 <a href= "http://localhost:5000/types">Back to types</a>
 </html>
